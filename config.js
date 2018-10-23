@@ -1,4 +1,4 @@
-const app_path = proccess.cwd();
+const app_path = process.cwd();
 
 module.exports = {
   zip_folder: app_path + '/zip-folder',

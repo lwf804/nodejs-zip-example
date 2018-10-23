@@ -20,7 +20,7 @@ app.get('/jszip', async function (req, res) {
   let filePaths = zip_files;
   let zipFile = await jszipFn(filePaths);
   if(fs.existsSync(zipFile)) {
-      let fileZipName = '全クレーン.zip';
+      let fileZipName = '例題.zip';
       res.download(zipFile, fileZipName, function(err){
         fs.unlinkSync(zipFile);
         res.end();
